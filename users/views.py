@@ -22,7 +22,7 @@ class LogOutView(LoginRequiredMixin,FormView):
         logout(self.request)
         return HttpResponseRedirect(reverse('home'))
 
-class  SignUpView(CreateView):
+class  signUpView(CreateView):
     form_class = UserCreationForm
-    template_name = "users/SignUpVIew.html"
+    template_name = "users/signUpVIew.html"
     success_url = reverse_lazy('users:dashboard')
