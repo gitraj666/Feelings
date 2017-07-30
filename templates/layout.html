@@ -41,7 +41,8 @@
               <li><a href="{% url 'users:login' %}">LOGIN</a></li>
               <li><a href="{% url 'users:signup' %}">SIGN UP</a></li>
             {% else %}
-                   <li> <a href="{% url 'users:logout' %}"> LOGOUT </a></li>
+                <li><a href="{% url 'users:dashboard' %}"> DASHBOARD </a></li>
+                <li> <a href="{% url 'users:logout' %}"> LOGOUT </a></li>
             {% endif %}
             </ul>
         </div>
